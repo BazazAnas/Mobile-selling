@@ -3,8 +3,11 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f7;
-    color: #1d1d1f;
+
+    /* Attractive gradient background */
+    background: linear-gradient(135deg, #eef2ff, #fdf4ff);
+
+    color: #1e293b;
     line-height: 1.6;
 }
 
@@ -18,26 +21,25 @@ body {
 
 /* Header */
 header {
-    background: #ffffff;
+    background: linear-gradient(90deg, #4f46e5, #7c3aed);
     padding: 20px 0;
-    border-bottom: 1px solid #d2d2d7;
+    border-bottom: none;
     position: sticky;
     top: 0;
     z-index: 1000;
 }
 
 header h1 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     text-align: left;
     letter-spacing: 1px;
-    color: #1d1d1f;
+    color: white;
     margin: 0;
     display: inline-block;
 }
 
 header nav {
     float: right;
-    text-align: center;
 }
 
 header nav ul {
@@ -52,7 +54,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #1d1d1f;
+    color: white;
     text-decoration: none;
     font-size: 1rem;
     font-weight: 500;
@@ -61,30 +63,30 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: #0071e3;
+    color: #facc15;
 }
 
 /* Main Section */
 main {
     padding: 60px 0;
-    background: #ffffff;
-    margin-top: 20px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
-    border-radius: 12px;
+    background: white;
+    margin-top: 30px;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.08);
+    border-radius: 16px;
 }
 
 main h2 {
     font-size: 2.5rem;
-    font-weight: 600;
+    font-weight: 700;
     text-align: center;
-    margin-bottom: 30px;
-    color: #1d1d1f;
+    margin-bottom: 20px;
+    color: #4338ca;
 }
 
 main p {
     font-size: 1.2rem;
     text-align: center;
-    color: #6e6e73;
+    color: #475569;
 }
 
 /* Product Showcase */
@@ -92,16 +94,17 @@ main p {
     display: flex;
     justify-content: space-around;
     margin-top: 40px;
+    gap: 20px;
 }
 
 .product {
-    background: #f5f5f7;
-    padding: 20px;
-    border-radius: 12px;
+    background: linear-gradient(145deg, #ffffff, #f8fafc);
+    padding: 25px;
+    border-radius: 16px;
     text-align: center;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.1);
     width: 30%;
-    transition: transform 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .product img {
@@ -111,28 +114,28 @@ main p {
 
 .product h3 {
     font-size: 1.5rem;
-    color: #1d1d1f;
+    color: #1e293b;
     margin: 20px 0 10px;
 }
 
 .product p {
     font-size: 1.2rem;
-    color: #0071e3;
+    color: #6366f1;
+    font-weight: 600;
 }
 
 .product:hover {
-    transform: translateY(-10px);
+    transform: translateY(-12px) scale(1.03);
 }
 
 /* Footer */
 footer {
-    background: #f5f5f7;
-    color: #6e6e73;
+    background: #1e293b;
+    color: #cbd5f5;
     text-align: center;
     padding: 40px 0;
     margin-top: 40px;
     font-size: 0.9rem;
-    border-top: 1px solid #d2d2d7;
 }
 
 footer p {
@@ -141,14 +144,13 @@ footer p {
 
 /* Form Styles */
 form {
-    background: #f5f5f7;
+    background: white;
     padding: 40px;
-    border-radius: 12px;
-    /* Continued Form Styles */
-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
+    border-radius: 16px;
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.08);
     max-width: 500px;
     margin: 40px auto;
-    border: 1px solid #d2d2d7;
+    border: none;
 }
 
 form label {
@@ -156,7 +158,7 @@ form label {
     margin-bottom: 12px;
     font-weight: 600;
     font-size: 1rem;
-    color: #1d1d1f;
+    color: #1e293b;
 }
 
 form input[type="text"],
@@ -164,31 +166,31 @@ form input[type="password"] {
     width: 100%;
     padding: 15px;
     margin-bottom: 20px;
-    border-radius: 8px;
-    border: 1px solid #d2d2d7;
-    background: #ffffff;
+    border-radius: 10px;
+    border: 1px solid #cbd5f5;
+    background: #f8fafc;
     font-size: 1rem;
 }
 
 form input[type="submit"] {
-    background: #0071e3;
-    color: #ffffff;
+    background: linear-gradient(90deg, #6366f1, #7c3aed);
+    color: white;
     padding: 15px 30px;
     border: none;
-    border-radius: 8px;
+    border-radius: 10px;
     cursor: pointer;
     font-size: 1rem;
     font-weight: 600;
-    transition: background 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 form input[type="submit"]:hover {
-    background: #005bb5;
+    background: linear-gradient(90deg, #4f46e5, #6d28d9);
 }
 
 /* Additional Styles */
 h2 {
-    color: #1d1d1f;
+    color: #4338ca;
     text-align: center;
     font-size: 2rem;
     margin-bottom: 20px;
@@ -198,6 +200,6 @@ h2 {
 p {
     font-size: 1.1rem;
     text-align: center;
-    color: #6e6e73;
+    color: #475569;
     margin-bottom: 30px;
 }
